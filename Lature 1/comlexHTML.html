@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <!-- <div class="container">
+            <h1></h1>
+            <h1></h1>
+        </div> -->
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    const root=ReactDOM.createRoot(document.getElementById("main"));
+    const h1=React.createElement('h1',{id:"head1"},"This is H1");
+    const h2=React.createElement('h2',{id:"head2"},"This is H2");
+    const h3=React.createElement('h3',{id:"head3"},"This is H3");
+    const h4=React.createElement('h4',{id:"head4"},"This is H4");
+    const h5=React.createElement('h5',{id:"head5"},"This is H5");
+    const div=React.createElement('div',{id:"container"},[h1,h2,h3,h4,h5]);
+    root.render(div)
+</script>
+</body>
+</html>
